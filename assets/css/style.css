@@ -40,6 +40,15 @@
     color: #ffffff;
 }
 
+
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
 .center h1 {
     color: #fff;
     font-size: 4rem;
@@ -752,12 +761,28 @@
 }
 
 .rec-card-fill {
+    max-width: calc(100% - 30%);
+    margin-left: 5px;
+}
+
+.rec-card-fill2 {
     margin-left: 5px;
 }
 
 .rec-card h3 {
     color: #e23ff1;
     font-size: 25px;
+}
+
+.rec-card-revenue {
+    text-align: justify;
+}
+
+.rec-card .rec-card-revenue .badge {
+    background-color: #4CAF50;
+    border-radius: 5px;
+    color: #fff;
+    padding: 5px;
 }
 
 .rec-card p {
@@ -1217,7 +1242,6 @@
         margin-left: 10px;
     }
 
-
     .filter-container {
         display: grid;
         grid-template-columns: 1fr;
@@ -1315,7 +1339,26 @@
         font-size: 12px;
     }
 
+    .revenue-details {
+        margin-top: 15px;
+        font-size: 9px;
+        margin-left: 15px;
+    }
+
+    .revenue-details h3 {
+        font-size: 18px;
+    }
+
+
     .rec-card-fill h3 {
+        font-size: 14px;
+    }
+
+    .rec-card-fill2 {
+        font-size: 12px;
+    }
+
+    .rec-card-fill2 h3 {
         font-size: 14px;
     }
 
