@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard VM</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Box Icons  -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Styles  -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/3.0.2/css/responsive.bootstrap5.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.8/css/dataTables.dataTables.css">
+    <link rel="shortcut icon" href="assets/img/vending-machine3.png" type="image/x-icon" style="height: max-content;">
+</head>
+
+<body class="data">
+    <div class="sidebar close">
+        <!-- ========== Logo ============  -->
+        <a href="#" class="logo-box">
+            <i class='bx bxl-microsoft'></i>
+            <div class="logo-name">Menu</div>
+        </a>
+
+        <!-- ========== List ============  -->
+        <ul class="sidebar-list">
+            <!-- -------- Non Dropdown List Item ------- -->
+            <li id="menu-dashboard">
+                <div class="title">
+                    <a href="index.html" class="link">
+                        <i class='bx bx-grid-alt'></i>
+                        <span class="name">Dashboard</span>
+                    </a>
+                </div>
+                <div class="submenu">
+                    <a href="index.html" class="link submenu-title">Dashboard</a>
+                </div>
+            </li>
+
+            <!-- -------- Dropdown List Item ------- -->
+            <li id="menu-category" class="dropdown">
+                <div class="title">
+                    <a href="#" class="link">
+                        <i class='bx bx-line-chart'></i>
+                        <span class="name">Category</span>
+                    </a>
+                    <i class='bx bxs-chevron-down'></i>
+                </div>
+                <div class="submenu">
+                    <a href="#" class="link submenu-title">Category</a>
+                    <a href="product.html" class="link">Product</a>
+                    <a href="location.html" class="link">Location</a>
+                    <a href="machine.html" class="link">Active Machine</a>
+                    <a href="favorite.html" class="link">Favourite Product</a>
+                </div>
+            </li>
+
+            <!-- -------- Non Dropdown List Item ------- -->
+            <li id="menu-data">
+                <div class="title">
+                    <a href="data.html" class="link">
+                        <i class='bx bx-data'></i>
+                        <span class="name">Data</span>
+                    </a>
+                </div>
+                <div class="submenu">
+                    <a href="data.html" class="link submenu-title">Data</a>
+                </div>
+            </li>
+
+            <!-- -------- Non Dropdown List Item ------- -->
+            <li id="menu-recommendation">
+                <div class="title">
+                    <a href="recommendation.html" class="link">
+                        <i class='bx bx-bulb'></i>
+                        <span class="name">Recommendation</span>
+                    </a>
+                </div>
+                <div class="submenu">
+                    <a href="recommendation.html" class="link submenu-title">Recommendation</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- ============= Home Section =============== -->
+    <section class="home">
+        <div class="toggle-sidebar">
+            <i class='bx bx-menu'></i>
+
+            <!-- =========== Header ============= -->
+            <header>
+                <div class="text">Data</div>
+            </header>
+        </div>
+        <!-- Garis horizontal -->
+        <hr class="content-divider">
+
+        <main>
+            <div class="chart-container" style="margin-top:40px;">
+                <h1>Data Table</h1>
+                <p>"Vending Machine Sales "</p>
+                <table id="example" class="cell-border hover stripe" style="width:100%;">
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Product</th>
+                            <th>Location</th>
+                            <th>Machine</th>
+                            <th>Transaction Date</th>
+                            <th>Total Transaction</th>
+                            <th>Quantity</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </main>
+
+        <!-- ===== Footer ===== -->
+        <div class="footer">
+            <footer>&copy;Vending Machine Sales by Elja Gusfi Anwar</footer>
+        </div>
+    </section>
+
+    <!-- Theme Toggle Button -->
+    <button id="theme-toggle" class="theme-toggle">
+        <i class='bx bx-moon'></i>
+    </button>
+
+    <!-- Link JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/2.0.8/js/dataTables.js"></script>
+    <script src="https://cdn.datatables.net/responsive/3.0.2/js/dataTables.responsive.js"></script>
+    <script src="assets/js/data.js"></script>
+
+</body>
+
+</html>

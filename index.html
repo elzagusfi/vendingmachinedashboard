@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard VM</title>
+
+    <!-- Box Icons  -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Styles  -->
+    <link rel="shortcut icon" href="assets/img/vending-machine3.png" type="image/x-icon" style="height: max-content;">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        @media (max-width: 430px) {
+            .home {
+                overflow-x: hidden !important;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body class="main">
+    <div class="sidebar close">
+        <!-- ========== Logo ============  -->
+        <a href="#" class="logo-box">
+            <i class='bx bxl-microsoft'></i>
+            <div class="logo-name">Menu</div>
+        </a>
+
+        <!-- ========== List ============  -->
+        <ul class="sidebar-list">
+            <!-- -------- Non Dropdown List Item ------- -->
+            <li id="menu-dashboard">
+                <div class="title">
+                    <a href="index.html" class="link">
+                        <i class='bx bx-grid-alt'></i>
+                        <span class="name">Dashboard</span>
+                    </a>
+                </div>
+                <div class="submenu">
+                    <a href="index.html" class="link submenu-title">Dashboard</a>
+                </div>
+            </li>
+
+            <!-- -------- Dropdown List Item ------- -->
+            <li id="menu-category" class="dropdown">
+                <div class="title">
+                    <a href="#" class="link">
+                        <i class='bx bx-line-chart'></i>
+                        <span class="name">Category</span>
+                    </a>
+                    <i class='bx bxs-chevron-down'></i>
+                </div>
+                <div class="submenu">
+                    <a href="#" class="link submenu-title">Category</a>
+                    <a href="product.html" id="subitem1" class="link">Product</a>
+                    <a href="location.html" id="subitem2" class="link">Location</a>
+                    <a href="machine.html" id="subitem3" class="link">Active Machine</a>
+                    <a href="favorite.html" id="subitem4" class="link">Favourite Product</a>
+                </div>
+            </li>
+
+            <!-- -------- Non Dropdown List Item ------- -->
+            <li id="menu-data">
+                <div class="title">
+                    <a href="data.html" class="link">
+                        <i class='bx bx-data'></i>
+                        <span class="name">Data</span>
+                    </a>
+                </div>
+                <div class="submenu">
+                    <a href="data.html" class="link submenu-title">Data</a>
+                </div>
+            </li>
+
+            <!-- -------- Non Dropdown List Item ------- -->
+            <li id="menu-recommendation">
+                <div class="title">
+                    <a href="recommendation.html" class="link">
+                        <i class='bx bx-bulb'></i>
+                        <span class="name">Recommendation</span>
+                    </a>
+                </div>
+                <div class="submenu">
+                    <a href="recommendation.html" class="link submenu-title">Recommendation</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- ============= Home Section =============== -->
+    <section class="home">
+        <div class="toggle-sidebar">
+            <i class='bx bx-menu'></i>
+
+            <!-- =========== Header ============= -->
+            <header>
+                <div class="text">Dashboard</div>
+            </header>
+        </div>
+        <!-- Garis horizontal -->
+        <hr class="content-divider">
+
+        <main>
+            <!-- Card Container -->
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number" id="totalRevenue">0</div>
+                        <div class="card-name">Total Revenue</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="bx bx-dollar"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number" id="totalQuantity">0</div>
+                        <div class="card-name">Quantity</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="bx bx-archive-in"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div id="totalProductsSold" class="number">0</div>
+                        <div class="card-name">Total Product</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="bx bx-shopping-bag"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div id="averageSales" class="number">0</div>
+                        <div class="card-name">AVG Sales</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="bx bx-chart"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="chart-container">
+                <h1>Vending Machine</h1>
+                <p>"Sales Chart"</p>
+                <div class="filter-container">
+                    <select id="categoryFilter" style="margin-right:10px;">
+                        <option value="" selected disabled>Category Filter</option>
+                        <option value="all">All</option>
+                        <option value="Food">Food</option>
+                        <option value="Carbonated">Carbonated</option>
+                        <option value="Non Carbonated">Non Carbonated</option>
+                        <option value="water">Water</option>
+                    </select>
+                     <div class="date-filter">
+                        <label for="startDate">Start Date:</label>
+                        <input type="date" id="startDate" min="2022-01-01" max="2022-12-31">
+                        <label for="endDate">End Date:</label>
+                        <input type="date" id="endDate" min="2022-01-01" max="2022-12-31">
+                        <button id="filterDateButton">Filter</button>
+                    </div>
+                </div>
+                <div class="charts">
+                    <div class="chart" id="productChart">
+                        <h2>Based On Product Category</h2>
+                        <canvas id="categoryLocationChart"></canvas>
+                    </div>
+                    <div class="chart" id="doughnut-chart">
+                        <h2>Based On Location</h2>
+                        <canvas id="locationPieChart"></canvas>
+                    </div>
+                    <div class="chart" id="topProduct">
+                        <h2>Top 10 Favourite Product</h2>
+                        <canvas id="productBarChart"></canvas>
+                    </div>
+                    <div class="chart" id="averagePrice" style="padding:10px">
+                        <h2>Average Product Price</h2>
+                        <canvas id="averagePriceChart"></canvas>
+                    </div>
+                    <div class="chart" id="activeMachine">
+                        <h2>Based On Active Machine</h2>
+                        <input type="text" id="machineSearch" placeholder="Search Machine"
+                            style="margin-bottom: 20px; width: 30%;">
+                        <label for="monthFilter" style="margin-right: 10px; margin-left:20px;">Filter by
+                            Quarter:</label>
+                        <select id="monthFilter">
+                            <option value="all">All</option>
+                            <option value="1-3">January - March</option>
+                            <option value="4-6">April - June</option>
+                            <option value="7-9">July - September</option>
+                            <option value="10-12">October - December</option>
+                        </select>
+                        <canvas id="machineMonthChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- ===== Footer ===== -->
+        <div class="footer">
+            <footer>&copy;Vending Machine Sales by Elja Gusfi Anwar</footer>
+        </div>
+    </section>
+
+    <!-- Theme Toggle Button -->
+    <button id="theme-toggle" class="theme-toggle">
+        <i class='bx bx-moon'></i>
+    </button>
+
+    <!-- Link JS -->
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+    <script src="https://unpkg.com/chart.js-plugin-labels-dv/dist/chartjs-plugin-labels.min.js"></script>
+</body>
+
+</html>

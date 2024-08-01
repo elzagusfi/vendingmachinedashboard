@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard VM</title>
+
+    <!-- Box Icons  -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Styles  -->
+    <link rel="shortcut icon" href="assets/img/vending-machine3.png" type="image/x-icon" style="height: max-content;">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="sidebar close">
+        <!-- ========== Logo ============  -->
+        <a href="#" class="logo-box">
+            <i class='bx bxl-microsoft'></i>
+            <div class="logo-name">Menu</div>
+        </a>
+
+        <!-- ========== List ============  -->
+        <ul class="sidebar-list">
+            <!-- -------- Non Dropdown List Item ------- -->
+            <li id="menu-dashboard">
+                <div class="title">
+                    <a href="index.html" class="link">
+                        <i class='bx bx-grid-alt'></i>
+                        <span class="name">Dashboard</span>
+                    </a>
+                </div>
+                <div class="submenu">
+                    <a href="index.html" class="link submenu-title">Dashboard</a>
+                </div>
+            </li>
+
+            <!-- -------- Dropdown List Item ------- -->
+            <li id="menu-category" class="dropdown">
+                <div class="title">
+                    <a href="#" class="link">
+                        <i class='bx bx-line-chart'></i>
+                        <span class="name">Category</span>
+                    </a>
+                    <i class='bx bxs-chevron-down'></i>
+                </div>
+                <div class="submenu">
+                    <a href="#" class="link submenu-title">Category</a>
+                    <a href="product.html" class="link">Product</a>
+                    <a href="location.html" class="link">Location</a>
+                    <a href="machine.html" class="link">Active Machine</a>
+                    <a href="favorite.html" class="link">Favourite Product</a>
+                </div>
+            </li>
+
+            <!-- -------- Non Dropdown List Item ------- -->
+            <li id="menu-data">
+                <div class="title">
+                    <a href="data.html" class="link">
+                        <i class='bx bx-data'></i>
+                        <span class="name">Data</span>
+                    </a>
+                </div>
+                <div class="submenu">
+                    <a href="data.html" class="link submenu-title">Data</a>
+                </div>
+            </li>
+
+            <!-- -------- Non Dropdown List Item ------- -->
+            <li id="menu-recommendation">
+                <div class="title">
+                    <a href="recommendation.html" class="link">
+                        <i class='bx bx-bulb'></i>
+                        <span class="name">Recommendation</span>
+                    </a>
+                </div>
+                <div class="submenu">
+                    <a href="recommendation.html" class="link submenu-title">Recommendation</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- ============= Home Section =============== -->
+    <section class="home">
+        <div class="toggle-sidebar">
+            <i class='bx bx-menu'></i>
+
+            <!-- =========== Header ============= -->
+            <header>
+                <div class="text">Recommendation</div>
+            </header>
+        </div>
+        <!-- Garis horizontal -->
+        <hr class="content-divider">
+
+        <main>
+            <div class="rec-container">
+                <div class="rec-header">
+                    <h2>Recommendations To Increase Sales by 10-15% in Next 12 Months</h2>
+                </div>
+
+                <div class="rec-card">
+                    <div class="rec-card-content">
+                        <div class="rec-card-fill">
+                            <h3>Product Stock Optimization</h3>
+                        </div>
+                    </div>
+                    <div class="rec-card">
+                        <div class="rec-card-content">
+                            <div class="rec-card-fill">
+                                <h3 style="color:rgb(219, 135, 39)">1. Food</h3>
+                                <p><strong>Seasonal Stock:</strong><br> Increase stock during the hot months (June-August) as sales increase.</p><br>
+                                <p><strong>Bundling Promotion:</strong><br> Offer discounts on joint food and beverage purchases to boost sales.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rec-card">
+                        <div class="rec-card-content">
+                            <div class="rec-card-fill">
+                                <h3 style="color:rgb(219, 135, 39)">2. Carbonated Beverages</h3>
+                                <p><strong>Routinely Update Stock:</strong><br> Keep stock of food products up-to-date as sales are highest throughout the year, running out of stock can reduce revenue significantly.</p><br>
+                                <p><strong>Product Diversification:</strong><br> Add a variety of snacks, including healthy options such as granola bars or dried fruits.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rec-card">
+                        <div class="rec-card-content">
+                            <div class="rec-card-fill">
+                                <h3 style="color:rgb(219, 135, 39)">3. Non-carbonated Beverages and Water:</h3>
+                                <p><strong>Fixed Stock:</strong><br> Maintain stock as sales are consistent throughout the year.</p><br>
+                                <p><strong>Strategic Placement:</strong><br> Place products in highly visible locations to attract consumer attention.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rec-card">
+                        <div class="rec-card-content">
+                            <div class="rec-card-fill">
+                                <h3 style="color:rgb(219, 135, 39)">4. Others Category:</h3>
+                                <p><strong>Product Evaluation:</strong><br> Conduct periodic evaluations to determine which products should be removed or added.</p><br>
+                                <p><strong>Promotions and Discounts:</strong><br> Use promotions and discounts to increase sales of less popular products.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="rec-card">
+                        <div class="rec-card-content">
+                            <div class="rec-card-fill">
+                                <h3>Vending Machine Placement</h3>
+                            </div>
+                        </div>
+                        <div class="rec-card">
+                            <div class="rec-card-content">
+                                <div class="rec-card-fill">
+                                    <h3 style="color:rgb(219, 135, 39)">1. High Traffic Locations</h3>
+                                    <p><strong>EB Public Library:</strong><br> Highest selling location, consider adding vending machines or expanding capacity.</p><br>
+                                    <p><strong>Brunswick Sq Mall:</strong><br> Place vending machines in strategic areas such as near entrances, food courts, or public facilities.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rec-card">
+                        <div class="rec-card-content">
+                            <div class="rec-card-fill">
+                                <h3 style="color:rgb(219, 135, 39)">2. Workplaces and Offices</h3>
+                                <p><strong>Earle Asphalt:</strong><br> Place vending machines in break rooms or near main work areas for easy access for workers.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rec-card">
+                        <div class="rec-card-content">
+                            <div class="rec-card-fill">
+                                <h3 style="color:rgb(219, 135, 39)">3. Recreation Areas:</h3>
+                                <p><strong>GuttenPlans:</strong><br> Place vending machines in gyms, fitness centers, or community parks to meet the needs of snacks and drinks.</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </main>
+
+        <!-- ===== Footer ===== -->
+        <div class="footer">
+            <footer>&copy;Vending Machine Sales by Elja Gusfi Anwar</footer>
+        </div>
+    </section>
+
+    <!-- Theme Toggle Button -->
+    <button id="theme-toggle" class="theme-toggle">
+        <i class='bx bx-moon'></i>
+    </button>
+
+    <!-- Link JS -->
+    <script src="assets/js/team.js"></script>
+</body>
+
+</html>
